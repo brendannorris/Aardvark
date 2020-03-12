@@ -5,12 +5,23 @@
 <title>Free Stock Quotes</title>
 </head>
 <body>
-<h1>Hot Quotes</h1>
+<h1 id="hot-quotes">Hot Quotes</h1>
 <br>
 <form>
 <h3>Enter Ticker Symbol Here</h3>
 <input type=text placeholder="Ex: GOOG, AMZN, etc.">
-<input type=submit value="Get Quote"></input>
+<input type=submit value="Get Quote" onclick="getQuote()"></input>
 </form>
+<br>
+<div id="my-text-box">
+</div>
 </body>
+
+
+<script>
+function getQuote() {
+	document.getElementById('my-text-box').innerHTML = "Go fuck yourself!";
+}
+</script>
+
 </html>
