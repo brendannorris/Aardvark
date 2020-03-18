@@ -32,7 +32,7 @@ public class GetStocks extends HttpServlet {
 		URL url = new URL("https://research.tdameritrade.com/grid/public/markets/indices/indices.asp");
 		Scanner pageReader = new Scanner(url.openStream());
 		while (pageReader.hasNext()) {
-			System.out.println(pageReader.next());
+			System.out.println(pageReader.next().replaceAll("<[^>]*>", ""));
 		}
 		pageReader.close();
 		response.getWriter().append("Served at: ").append(request.getContextPath());
