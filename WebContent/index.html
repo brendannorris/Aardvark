@@ -5,16 +5,20 @@
 <title>Free Stock Quotes</title>
 </head>
 <body>
-<h1 id="hot-quotes">Hot Quotes</h1>
-<br>
-<form>
-<h3>Enter Ticker Symbol Here</h3>
-<input type=text placeholder="Ex: GOOG, AMZN, etc.">
-<input type=submit value="Get Quote" onclick="getQuote()"></input>
-</form>
-<br>
-<div id="my-text-box">
-</div>
+	<h1 id="hot-quotes">Hot Quotes</h1>
+	<br>
+	<form>
+		<h3>Enter Ticker Symbol Here</h3>
+		<input type=text placeholder="Ex: GOOG, AMZN, etc."> <input
+			type=submit value="Get Quote" onclick="getQuote()"></input>
+	</form>
+	<br>
+	<div id="my-text-box"></div>
+	<h2>Today's Current Trends</h2>
+	<form action="GetStocks" method="GET">
+	<button type="submit">Show Now</button>
+	</form>
+	
 </body>
 
 
